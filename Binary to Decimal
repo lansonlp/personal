@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+	
+
+	long int bin, dec=0, i=1, rem;
+
+	printf("Enter any binary number");
+
+	scanf("%ld",&bin);
+
+	while(bin!=0)
+
+	{
+
+		rem=bin%10;
+
+		dec=dec+rem*i;
+
+		i=i*2;
+
+		bin=bin/10;
+
+	}
+
+	printf("Equivalent decimal value = %ld",dec);
+
+}
